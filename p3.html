@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> String Palindrom or not</h1>
+    <script>
+        let x = "malayalam";
+        let x1 = "english";
+        var string = "malayalam";
+        function resString(event) {
+            var output = '';
+            let a = event.length - 1;
+                while(a >=0) {output += event[a];
+                    --a;}
+                console.log('result =', output)
+                return output;
+        }
+        var output = resString(string);
+
+        function String(palindrom){
+            let a = palindrom.length -1
+            for (let b = 0; b < palindrom.length / 2; b++){
+                if(palindrom[b] != palindrom[a]) {
+                    return false;
+                }
+                a--;
+            }
+            return true;
+        }
+        console.log(`${x} string is a palindrom =`, String(x));
+
+        var str = "english";
+        function resString(event) {
+            var output = '';
+            let a = event.length - 1;
+                while(a >=0) {output += event[a];
+                    --a;}
+                console.log('result =', output)
+                return output;
+        }
+        var output = resString(str);
+        console.log(` ${x1} string is a palindrom =`, String(x1));
+    </script>
+</body>
+</html>

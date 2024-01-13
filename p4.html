@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Repeated characters in given String or not</h1>
+    <script>
+    var x = 'test';
+    var x1 = 'welcome';
+    var x2 = 'more';
+    var x3 = 'knowledge';
+    var x4 = 'checking';
+
+    var charRepeats = function(str) {
+
+        for (var i=0; i<str.length; i++) {
+        if ( str.indexOf(str[i]) !== str.lastIndexOf(str[i]) ) {
+           console.log(`${str[i]}`);
+
+           return true; 
+
+        }
+        }
+    return false;
+    }
+
+    console.log(`${x}=`, charRepeats(x) );
+    console.log(`${x1} =`, charRepeats(x1) );
+    console.log(`${x2} =`, charRepeats(x2) );
+    console.log(`${x3} =`, charRepeats(x3) );
+    console.log(`${x4} =`, charRepeats(x4) );
+
+</script>
+</body>
+</html>
